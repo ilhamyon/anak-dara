@@ -23,7 +23,7 @@ function RuangKeluargaSet() {
   };
   return (
     <div className="my-0 mx-auto min-h-full w-full flex justify-center max-w-screen-sm" style={{maxWidth: "480px"}}>
-      <section className="relative w-[390px] h-[915px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
+      <section className="relative w-[480px] h-[960px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
         <div className="absolute mt-[154px] ml-44 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("LemariBarang")} src={LemariBarang} />
         </div>
@@ -33,10 +33,10 @@ function RuangKeluargaSet() {
         <div className="absolute mt-[108px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("KotakObat")} src={KotakObat} />
         </div>
-        <div className="absolute mt-[500px] ml-[207px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[530px] ml-[207px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Colokan")} src={Colokan} />
         </div>
-        <div className="absolute mt-[548px] opacity-80 cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[578px] opacity-80 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Tangga")} src={Tangga} />
         </div>
         <div className="absolute bottom-0 ml-4 hover:drop-shadow-4xl">

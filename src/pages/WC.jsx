@@ -23,20 +23,20 @@ function WcSet() {
   };
   return (
     <div className="my-0 mx-auto min-h-full w-full flex justify-center max-w-screen-sm" style={{maxWidth: "480px"}}>
-      <section className="relative w-[390px] h-[768px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
+      <section className="relative w-[480px] h-[790px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
         <div className="absolute mt-80 ml-44 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("LantaiBasah")} src={LantaiBasah} />
         </div>
-        <div className="absolute mt-[530px] ml-4 cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[560px] ml-4 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MesinCuci")} src={MesinCuci} />
         </div>
-        <div className="absolute mt-[446px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[465px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("SabunLantai")} src={SabunLantai} />
         </div>
-        <div className="absolute mt-[491px] ml-[340px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[513px] ml-[340px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Botol")} src={Botol} />
         </div>
-        <div className="absolute mt-[708px] opacity-80 ml-[290px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[735px] opacity-80 ml-[265px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("LantaiRusak")} src={LantaiRusak} />
         </div>
         <div className="absolute bottom-0 ml-4 hover:drop-shadow-4xl">
