@@ -1,6 +1,7 @@
 import { Button, Input, Select, message } from "antd"
 import Hero from "../assets/hero-anak-dara.jpg"
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const { Option } = Select;
 
@@ -40,6 +41,7 @@ const createSanityUser = async (userData) => {
 };
 
 function Home() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     umur: '',
@@ -57,6 +59,7 @@ function Home() {
       await createSanityUser(formData);
 
       message.success("Berhasil isi identitas.")
+      navigate("/kamar-mandi")
 
       // Reset the form after successful registration
       setFormData({
@@ -73,13 +76,15 @@ function Home() {
   return (
     <div className="my-0 mx-auto min-h-full max-w-screen-sm" style={{maxWidth: "480px"}}>
       <section id="hero">
-        <img src={Hero} />
+        <a href="#identitas">
+          <img src={Hero} />
+        </a>
       </section>
 
       <section id="identitas" className="bg-[#c7d5d5] h-screen flex flex-col items-center justify-center">
         <div className="py-20 px-10">
           <form className="w-full items-center" onSubmit={handleSubmit}>
-              <h2 className="font-bold text-[18px] lg:text-4xl mb-10 text-white text-center uppercase">Isi Identitas Diri</h2>
+              <h2 className="font-bold text-3xl lg:text-4xl mb-10 text-white text-center uppercase">Isi Identitas Diri</h2>
               <Input
                 type="text"
                 name="name"
