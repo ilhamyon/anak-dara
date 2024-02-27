@@ -33,7 +33,7 @@ function DapurSet() {
         <div className="absolute mt-[266px] ml-[5px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("TempatSampah")} src={TempatSampah} />
         </div>
-        <div className="absolute mt-[545px] ml-[247px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[545px] ml-[238px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MakananKemasan")} src={MakananKemasan} />
         </div>
         <div className="absolute mt-[540px] opacity-80 ml-[110px] cursor-pointer hover:drop-shadow-3xl">
