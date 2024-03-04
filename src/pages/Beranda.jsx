@@ -35,7 +35,7 @@ function Beranda() {
     <>
         <div className="my-0 mx-auto min-h-full w-full flex items-center justify-center max-w-screen-sm" style={{maxWidth: "480px"}}>
             <section className="relative w-[480px] h-[290px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
-                <div className="absolute mt-[155px] ml-5 cursor-pointer hover:drop-shadow-3xl">
+                <div className="absolute mt-[155px] ml-2 cursor-pointer hover:drop-shadow-3xl">
                     <Link to="/ruang-kelas">
                         <img width={65} src={Tas} />
                     </Link>
@@ -43,16 +43,16 @@ function Beranda() {
                 <div className="absolute mt-[164px] ml-[310px] cursor-pointer hover:drop-shadow-3xl">
                     <img onClick={() => handleOpenModal("JenisCedera")} width={30} src={Lampu} />
                 </div>
-                <div className="absolute mt-[101px] ml-[348px] cursor-pointer hover:drop-shadow-3xl">
-                    <img onClick={() => handleOpenModal("CaraNyebrang")} width={40} src={Nyebrang} />
+                <div className="absolute mt-[110px] ml-[325px] cursor-pointer hover:drop-shadow-3xl">
+                    <img onClick={() => handleOpenModal("CaraNyebrang")} width={30} src={Nyebrang} />
                 </div>
-                <div className="absolute mt-[110px] ml-[305px] cursor-pointer hover:drop-shadow-3xl">
-                    <img onClick={() => handleOpenModal("Sepeda")} width={40} src={Sepeda} />
+                <div className="absolute mt-[114px] ml-[285px] cursor-pointer hover:drop-shadow-3xl">
+                    <img onClick={() => handleOpenModal("Sepeda")} width={35} src={Sepeda} />
                 </div>
-                <div className="absolute mt-[159px] opacity-80 ml-[180px] cursor-pointer hover:drop-shadow-3xl">
+                <div className="absolute mt-[159px] opacity-80 ml-[165px] cursor-pointer hover:drop-shadow-3xl">
                     <img onClick={() => handleOpenModal("PerawatanLuka")} width={32} src={OrangLuka} />
                 </div>
-                <div className="absolute mt-[163px] ml-[90px] cursor-pointer hover:drop-shadow-3xl">
+                <div className="absolute mt-[163px] ml-[78px] cursor-pointer hover:drop-shadow-3xl">
                     <Link to="/dapur">
                         <img width={22} src={Apel} />
                     </Link>

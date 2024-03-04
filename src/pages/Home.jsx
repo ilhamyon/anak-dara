@@ -59,7 +59,7 @@ function Home() {
       await createSanityUser(formData);
 
       message.success("Berhasil isi identitas.")
-      navigate("/kamar-mandi")
+      navigate("/beranda")
 
       // Reset the form after successful registration
       setFormData({
@@ -93,6 +93,7 @@ function Home() {
                 className="mb-4 border"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
               />
               <Input
                 type="text"
@@ -102,6 +103,7 @@ function Home() {
                 className="mb-4 border"
                 value={formData.umur}
                 onChange={(e) => setFormData({ ...formData, umur: e.target.value })}
+                required
               />
               <Select
                 defaultValue="Laki-laki"
@@ -124,6 +126,7 @@ function Home() {
                 className="mb-8 border"
                 value={formData.alamat}
                 onChange={(e) => setFormData({ ...formData, alamat: e.target.value })}
+                required
               />
               <Input
                 type="number"
@@ -133,6 +136,7 @@ function Home() {
                 className="mb-8 border"
                 value={formData.telepon}
                 onChange={(e) => setFormData({ ...formData, telepon: e.target.value })}
+                required
               />
               <Button
                 className="text-white bg-[#9b6146] w-full"
