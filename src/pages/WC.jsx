@@ -39,9 +39,9 @@ function WcSet() {
         <div className="absolute mt-[735px] opacity-80 ml-[265px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("LantaiRusak")} src={LantaiRusak} />
         </div>
-        <div className="absolute bottom-0 ml-4 hover:drop-shadow-4xl">
-          <Link to="/ruang-keluarga">
-            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 512 512"><path fill="currentColor" d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6S320 110.5 320 120v72H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32h288v72c0 9.6 5.7 18.2 14.5 22"/></svg>
+        <div className="absolute bottom-2 right-2 hover:drop-shadow-4xl">
+          <Link to="/beranda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 36 36"><path fill="currentColor" d="M33 19a1 1 0 0 1-.71-.29L18 4.41L3.71 18.71A1 1 0 0 1 2.3 17.3l15-15a1 1 0 0 1 1.41 0l15 15A1 1 0 0 1 33 19" className="clr-i-solid clr-i-solid-path-1"/><path fill="currentColor" d="M18 7.79L6 19.83V32a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76Z" className="clr-i-solid clr-i-solid-path-2"/><path fill="none" d="M0 0h36v36H0z"/></svg>
           </Link>
         </div>
       </section>
