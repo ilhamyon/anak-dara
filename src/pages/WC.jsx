@@ -7,6 +7,10 @@ import LantaiRusak from "../assets/lantai-rusak.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
+import VideoMateriLantaiBasah from "../assets/Materi Lantai Basah.mp4"
+import VideoMateriLantaiRusak from "../assets/Materi lantai rusak.mp4"
+import VideoMateriMesinCuci from "../assets/Materi mesin cuci.mp4"
+import VideoMateriSabun from "../assets/Materi sabun.mp4"
 
 function WcSet() {
   const [visible, setVisible] = useState(false);
@@ -58,13 +62,23 @@ function WcSet() {
         <div className="mt-6">
           {modalContentId === "LantaiBasah" &&
             <div>
-              Materi Lantai Basah
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriLantaiBasah} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "MesinCuci" &&
             <div>
-              Materi Mesin Cuci
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriMesinCuci} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
@@ -76,13 +90,23 @@ function WcSet() {
 
           {modalContentId === "SabunLantai" &&
             <div>
-              Materi Sabun Lantai
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriSabun} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "LantaiRusak" &&
             <div>
-              Materi Lantai Rusak
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriLantaiRusak} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
         </div>

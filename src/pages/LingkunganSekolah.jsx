@@ -6,6 +6,8 @@ import Sepeda from "../assets/sepeda.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
+import VideoCaraMenyebrang from "../assets/Cara menyebrang.mp4"
+import VideoSepeda from "../assets/Video sepeda.mp4"
 
 function LingkunganSekolah() {
   const [visible, setVisible] = useState(false);
@@ -60,7 +62,12 @@ function LingkunganSekolah() {
 
           {modalContentId === "ZebraCross" &&
             <div>
-              Materi Zebra Cross
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoCaraMenyebrang} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
@@ -72,7 +79,12 @@ function LingkunganSekolah() {
 
           {modalContentId === "Sepeda" &&
             <div>
-              Materi Sepeda
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoSepeda} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
         </div>

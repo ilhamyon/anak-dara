@@ -7,6 +7,10 @@ import Pisau from "../assets/pisau.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
+import VideoMateriKompor from "../assets/Materi Kompor.mp4"
+import VideoMateriMakananKemasan from "../assets/Materi makanan kemasan.mp4"
+import VideoMateriPisau from "../assets/Materi Pisau.mp4"
+import VideoMateriAirPanas from "../assets/Materi air panas.mp4"
 
 function DapurSet() {
   const [visible, setVisible] = useState(false);
@@ -58,19 +62,34 @@ function DapurSet() {
         <div className="mt-6">
           {modalContentId === "Kompor" &&
             <div>
-              Materi Kompor
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriKompor} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "AirHangat" &&
             <div>
-              Materi Air Hangat
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriAirPanas} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "MakananKemasan" &&
             <div>
-              Materi Makanan Kemasan
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriMakananKemasan} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
@@ -82,7 +101,12 @@ function DapurSet() {
 
           {modalContentId === "Pisau" &&
             <div>
-              Materi Pisau
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriPisau} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
         </div>

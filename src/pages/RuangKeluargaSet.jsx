@@ -7,6 +7,10 @@ import Tangga from "../assets/tangga.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
+import VideoMateriObatan from "../assets/Materi Obatan.mp4"
+import VideoMateriLemari from "../assets/Materi lemari.mp4"
+import VideoMateriMainan from "../assets/Materi mainan berserakan.mp4"
+import VideoMateriColokan from "../assets/Materi colokan.mp4"
 
 function RuangKeluargaSet() {
   const [visible, setVisible] = useState(false);
@@ -63,25 +67,45 @@ function RuangKeluargaSet() {
         <div className="mt-6">
           {modalContentId === "LemariBarang" &&
             <div>
-              Materi Lemari Barang
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriLemari} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "MainanAnak" &&
             <div>
-              Materi Mainan Anak
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriMainan} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "Colokan" &&
             <div>
-              Materi Colokan
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriColokan} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "KotakObat" &&
             <div>
-              Materi Kotak Obat
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriObatan} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 

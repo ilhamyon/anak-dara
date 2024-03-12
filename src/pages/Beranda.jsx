@@ -10,6 +10,7 @@ import OrangLuka from "../assets/orang-luka.png"
 import Buku from "../assets/buku.png"
 import Lampu from "../assets/lampu.png"
 import VideoJenisCedera from "../assets/Jenis Cedera.mp4"
+import VideoCaraMenyebrang from "../assets/Cara menyebrang.mp4"
 import VideoPencegahanCedera from "../assets/Pencegahan Cedera.mp4"
 import VideoPertolonganLukaBakar from "../assets/Pertolongan Luka Bakar.mp4"
 import VideoPertolonganLukaLecet from "../assets/pertolongan pertama luka lecet dirumah.mp4"
@@ -101,11 +102,18 @@ function Beranda() {
 
                 {modalContentId === "PerawatanLuka" &&
                     <div>
-                        <div className="flex justify-center px-4">
+                        <div className="flex flex-col justify-center px-4">
                             <video width="100%" height="auto" controls>
                                 <source src={VideoPertolonganLukaLecet} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
+                            <h3 className="text-xl font-bold mb-10">Perawatan Luka Lecet</h3>
+
+                            <video width="100%" height="auto" controls>
+                                <source src={VideoPertolonganLukaBakar} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <h3 className="text-xl font-bold">Perawatan Luka Bakar</h3>
                         </div>
                     </div>
                 }
@@ -125,7 +133,7 @@ function Beranda() {
                     <div>
                         <div className="flex justify-center px-4">
                             <video width="100%" height="auto" controls>
-                                <source src={VideoPencegahanCedera} type="video/mp4" />
+                                <source src={VideoCaraMenyebrang} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
