@@ -74,7 +74,7 @@ function Beranda() {
                         <img width={25} src={Toilet} />
                     </Link>
                 </div>
-                <div className="absolute mt-[115px] ml-[53px] cursor-pointer hover:drop-shadow-3xl">
+                <div className="absolute mt-[115px] ml-[43px] cursor-pointer hover:drop-shadow-3xl">
                     <img onClick={() => handleOpenModal("MateriPencegahanLuka")} width={25} src={Buku} />
                 </div>
                 <div className="absolute mt-[229px] opacity-80 ml-[309px] cursor-pointer hover:drop-shadow-3xl">

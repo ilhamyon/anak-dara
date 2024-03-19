@@ -90,7 +90,7 @@ function Home() {
         </a>
       </section>
 
-      <section id="identitas" className="bg-[#c7d5d5] h-screen flex flex-col items-center justify-center">
+      <section id="identitas" className="bg-[#c7d5d5] flex flex-col items-center justify-center">
         <div className="py-20 px-10">
           <form className="w-full items-center" onSubmit={handleSubmit}>
               <h2 className="font-bold text-3xl lg:text-4xl mb-10 text-white text-center uppercase">Isi Identitas Diri</h2>
