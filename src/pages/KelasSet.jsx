@@ -6,6 +6,8 @@ import AnakLari from "../assets/anak-lari.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
+import VideoMateriColokan from "../assets/Materi colokan.mp4"
+import VideoMateriLantaiBasah from "../assets/Materi Lantai Basah.mp4"
 
 function KelasSet() {
   const [visible, setVisible] = useState(false);
@@ -54,25 +56,35 @@ function KelasSet() {
         <div className="mt-6">
           {modalContentId === "MejaRusak" &&
             <div>
-              Materi Meja Rusak
+              Furnitur yang rusak dapat menjadi penyebab cedera diruang kelas
             </div>
           }
 
           {modalContentId === "Kabel" &&
             <div>
-              Materi Kabel Berantakan
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriColokan} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
           {modalContentId === "AnakLari" &&
             <div>
-              Materi Anak Lari
+              Berlarian di ruangan kelas dapat menyebabkan cedera karena banyak meja dan kursi diruangan kelas. sehingga harus berhati - hati yaa
             </div>
           }
 
           {modalContentId === "LantaiLicin" &&
             <div>
-              Materi Lantai Licin
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriLantaiBasah} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
         </div>

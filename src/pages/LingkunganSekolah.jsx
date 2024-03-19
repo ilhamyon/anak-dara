@@ -3,11 +3,13 @@ import Tangga from "../assets/tangga-sekolah.png"
 import ZebraCross from "../assets/zebra-cross.png"
 import MainBola from "../assets/main-bola.png"
 import Sepeda from "../assets/sepeda.png"
+import Mobil from "../assets/mobil1.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
-import VideoCaraMenyebrang from "../assets/Cara menyebrang.mp4"
-import VideoSepeda from "../assets/Video sepeda.mp4"
+import VideoZebraCross from "../assets/Materi zebra cross.mp4"
+// import VideoSepeda from "../assets/Video sepeda.mp4"
+import VideoMateriTangga from "../assets/Materi Tangga.mp4"
 
 function LingkunganSekolah() {
   const [visible, setVisible] = useState(false);
@@ -30,6 +32,9 @@ function LingkunganSekolah() {
         </div>
         <div className="absolute mt-[268px] ml-[290px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("ZebraCross")} width={80} src={ZebraCross} />
+        </div>
+        <div className="absolute mt-[233px] ml-[70px]">
+          <img width={140} src={Mobil} />
         </div>
         <div className="absolute mt-[436px] ml-[225px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MainBola")} width={110} src={MainBola} />
@@ -56,7 +61,12 @@ function LingkunganSekolah() {
         <div className="mt-6">
           {modalContentId === "Tangga" &&
             <div>
-              Materi Tangga
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriTangga} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 
@@ -64,7 +74,7 @@ function LingkunganSekolah() {
             <div>
               <div className="flex justify-center px-4">
                   <video width="100%" height="auto" controls>
-                      <source src={VideoCaraMenyebrang} type="video/mp4" />
+                      <source src={VideoZebraCross} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
               </div>
@@ -73,18 +83,13 @@ function LingkunganSekolah() {
 
           {modalContentId === "MainBola" &&
             <div>
-              Materi Main Bola
+              Bermain bola tanpa pengawasan dapat menyebabkan cedera loh
             </div>
           }
 
           {modalContentId === "Sepeda" &&
             <div>
-              <div className="flex justify-center px-4">
-                  <video width="100%" height="auto" controls>
-                      <source src={VideoSepeda} type="video/mp4" />
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
+              Helm sepeda tidak dapat mencegah terjadinya kecelakaan, namun seorang anak yang memakai helm dan terlibat dalam kecelakaan mempunyai peluang lebih besar untuk tidak terluka atau mengalami cedera kepala yang tidak terlalu parah dibandingkan jika mereka tidak memakai helm
             </div>
           }
         </div>

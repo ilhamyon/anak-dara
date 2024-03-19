@@ -1,4 +1,4 @@
-import { Button, Input, Select, message } from "antd"
+import { Button, Input, Radio, Select, message } from "antd"
 import Hero from "../assets/hero-anak-dara.jpg"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -23,6 +23,9 @@ const createSanityUser = async (userData) => {
               gender: userData.gender,
               alamat: userData.alamat,
               telepon: userData.telepon,
+              question1: userData.question1,
+              question2: userData.question2,
+              question3: userData.question3,
             },
           },
         ],
@@ -47,7 +50,10 @@ function Home() {
     umur: '',
     gender: 'Jenis kelamin',
     alamat: '',
-    telepon: ''
+    telepon: '',
+    question1: '',
+    question2: '',
+    question3: ''
   });
 
   console.log(formData);
@@ -67,7 +73,10 @@ function Home() {
         umur: '',
         gender: '',
         alamat: '',
-        telepon: ''
+        telepon: '',
+        question1: '',
+        question2: '',
+        question3: ''
       });
     } catch (error) {
       console.error('Error registering user:', error);
@@ -123,7 +132,7 @@ function Home() {
                 name="alamat"
                 placeholder="Alamat"
                 size="large"
-                className="mb-8 border"
+                className="mb-4 border"
                 value={formData.alamat}
                 onChange={(e) => setFormData({ ...formData, alamat: e.target.value })}
                 required
@@ -133,11 +142,45 @@ function Home() {
                 name="telepon"
                 placeholder="Telepon"
                 size="large"
-                className="mb-8 border"
+                className="mb-4 border"
                 value={formData.telepon}
                 onChange={(e) => setFormData({ ...formData, telepon: e.target.value })}
                 required
               />
+
+              <div className="mb-4 flex flex-col gap-1">
+                <label className="text-gray-700">1. Apakah kamu pernah menolong teman yang terjatuh/ terluka?</label>
+                <Radio.Group
+                  value={formData.question1}
+                  onChange={(e) => setFormData({ ...formData, question1: e.target.value })}
+                >
+                    <Radio value={true}>Ya</Radio>
+                    <Radio value={false}>Tidak</Radio>
+                </Radio.Group>
+              </div>
+
+              <div className="mb-4 flex flex-col gap-1">
+                <label className="text-gray-700">2. Apakah kamu pernah mengingatkan teman untuk berhati - hati?</label>
+                <Radio.Group
+                  value={formData.question2}
+                  onChange={(e) => setFormData({ ...formData, question2: e.target.value })}
+                >
+                    <Radio value={true}>Ya</Radio>
+                    <Radio value={false}>Tidak</Radio>
+                </Radio.Group>
+              </div>
+
+              <div className="mb-8 flex flex-col gap-1">
+                <label className="text-gray-700">3. Apakah kamu mengetahui pertolongan pertama pada cedera?</label>
+                <Radio.Group
+                  value={formData.question3}
+                  onChange={(e) => setFormData({ ...formData, question3: e.target.value })}
+                >
+                    <Radio value={true}>Ya</Radio>
+                    <Radio value={false}>Tidak</Radio>
+                </Radio.Group>
+              </div>
+
               <Button
                 className="text-white bg-[#9b6146] w-full"
                 htmlType="submit"

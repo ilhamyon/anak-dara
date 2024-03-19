@@ -9,6 +9,7 @@ import Toilet from "../assets/tanda-toilet.png"
 import OrangLuka from "../assets/orang-luka.png"
 import Buku from "../assets/buku.png"
 import Lampu from "../assets/lampu.png"
+import WA from "../assets/konsultasi.png"
 import VideoJenisCedera from "../assets/Jenis Cedera.mp4"
 import VideoCaraMenyebrang from "../assets/Cara menyebrang.mp4"
 import VideoPencegahanCedera from "../assets/Pencegahan Cedera.mp4"
@@ -75,6 +76,11 @@ function Beranda() {
                 </div>
                 <div className="absolute mt-[115px] ml-[53px] cursor-pointer hover:drop-shadow-3xl">
                     <img onClick={() => handleOpenModal("MateriPencegahanLuka")} width={25} src={Buku} />
+                </div>
+                <div className="absolute mt-[229px] opacity-80 ml-[309px] cursor-pointer hover:drop-shadow-3xl">
+                    <a href="https://wa.me/6281217104559?text=Halo%20Ners%2C%20Saya%20ingin%20konsultasi!" target="_blank">
+                        <img width={42} src={WA} />
+                    </a>
                 </div>
             </section>
         </div>

@@ -84,7 +84,12 @@ function WcSet() {
 
           {modalContentId === "Botol" &&
             <div>
-              Materi Botol
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriSabun} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
 

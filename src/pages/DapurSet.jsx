@@ -95,7 +95,7 @@ function DapurSet() {
 
           {modalContentId === "TempatSampah" &&
             <div>
-              Materi Tempat Sampah
+              Sampah didapur harus ditutup karena menjadi tempat berkembang biak kuman penyebab penyakit
             </div>
           }
 

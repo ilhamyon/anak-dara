@@ -11,6 +11,7 @@ import VideoMateriObatan from "../assets/Materi Obatan.mp4"
 import VideoMateriLemari from "../assets/Materi lemari.mp4"
 import VideoMateriMainan from "../assets/Materi mainan berserakan.mp4"
 import VideoMateriColokan from "../assets/Materi colokan.mp4"
+import VideoMateriTangga from "../assets/Materi Tangga.mp4"
 
 function RuangKeluargaSet() {
   const [visible, setVisible] = useState(false);
@@ -111,7 +112,12 @@ function RuangKeluargaSet() {
 
           {modalContentId === "Tangga" &&
             <div>
-              Materi Tangga
+              <div className="flex justify-center px-4">
+                  <video width="100%" height="auto" controls>
+                      <source src={VideoMateriTangga} type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
             </div>
           }
         </div>
