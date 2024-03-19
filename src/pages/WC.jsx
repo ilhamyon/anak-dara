@@ -34,10 +34,10 @@ function WcSet() {
         <div className="absolute mt-[560px] ml-4 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MesinCuci")} src={MesinCuci} />
         </div>
-        <div className="absolute mt-[465px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[459px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("SabunLantai")} src={SabunLantai} />
         </div>
-        <div className="absolute mt-[513px] ml-[340px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[505px] ml-[340px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Botol")} src={Botol} />
         </div>
         <div className="absolute mt-[735px] opacity-80 ml-[265px] cursor-pointer hover:drop-shadow-3xl">

@@ -28,7 +28,7 @@ function DapurSet() {
   return (
     <div className="my-0 mx-auto min-h-full w-full flex justify-center max-w-screen-sm" style={{maxWidth: "480px"}}>
       <section className="relative w-[480px] h-[768px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
-        <div className="absolute mt-[160px] ml-10 cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[160px] ml-8 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Kompor")} src={Kompor} />
         </div>
         <div className="absolute mt-[134px] ml-60 cursor-pointer hover:drop-shadow-3xl">
@@ -37,10 +37,10 @@ function DapurSet() {
         <div className="absolute mt-[266px] ml-[5px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("TempatSampah")} src={TempatSampah} />
         </div>
-        <div className="absolute mt-[545px] ml-[250px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[545px] ml-[230px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MakananKemasan")} src={MakananKemasan} />
         </div>
-        <div className="absolute mt-[540px] opacity-80 ml-[110px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[540px] opacity-80 ml-[90px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Pisau")} src={Pisau} />
         </div>
         <div className="absolute bottom-2 right-0 mr-4 hover:drop-shadow-4xl">

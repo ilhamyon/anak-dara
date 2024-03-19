@@ -27,14 +27,14 @@ function LingkunganSekolah() {
   return (
     <div className="my-0 mx-auto min-h-full w-full flex justify-center max-w-screen-sm" style={{maxWidth: "480px"}}>
       <section className="relative w-[480px] h-[728px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${BG})`}}>
-        <div className="absolute mt-[155px] ml-[167px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[155px] ml-[150px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Tangga")} width={80} src={Tangga} />
         </div>
-        <div className="absolute mt-[268px] ml-[290px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[268px] ml-[280px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("ZebraCross")} width={80} src={ZebraCross} />
         </div>
-        <div className="absolute mt-[233px] ml-[70px]">
-          <img width={140} src={Mobil} />
+        <div className="absolute mt-[218px] ml-[30px]">
+          <img width={180} src={Mobil} />
         </div>
         <div className="absolute mt-[436px] ml-[225px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("MainBola")} width={110} src={MainBola} />
