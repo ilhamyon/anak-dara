@@ -2,8 +2,8 @@ import BG from "../assets/bg-ruang-keluarga.jpg"
 import LemariBarang from "../assets/lemari-barang.png"
 import MainanAnak from "../assets/mainan.png"
 import KotakObat from "../assets/kotak-obat.png"
-import Colokan from "../assets/colokan.png"
-import Tangga from "../assets/tangga.png"
+import Colokan from "../assets/kabel-colokan.png"
+import Tangga from "../assets/tangga-curam.png"
 import { useState } from "react"
 import { Button, Modal } from "antd"
 import { Link } from "react-router-dom"
@@ -38,10 +38,10 @@ function RuangKeluargaSet() {
         <div className="absolute mt-[108px] ml-[200px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("KotakObat")} src={KotakObat} />
         </div>
-        <div className="absolute mt-[530px] ml-[207px] cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[570px] ml-[207px] cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Colokan")} src={Colokan} />
         </div>
-        <div className="absolute mt-[578px] opacity-80 cursor-pointer hover:drop-shadow-3xl">
+        <div className="absolute mt-[548px] opacity-80 cursor-pointer hover:drop-shadow-3xl">
           <img onClick={() => handleOpenModal("Tangga")} src={Tangga} />
         </div>
         {/* <div className="absolute bottom-0 ml-4 hover:drop-shadow-4xl">
